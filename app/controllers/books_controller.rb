@@ -1,4 +1,4 @@
-class BookstoresController < ApplicationController
+class BooksController < ApplicationController
   def index
    @books = Bookstore.all
   end
