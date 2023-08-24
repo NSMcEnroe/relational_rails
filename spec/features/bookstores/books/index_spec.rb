@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'the childs index page' do
-  it 'displays the name of each book and all of their attributes' do
+RSpec.describe 'Parent Children Index' do
+  it 'will show each book in the bookstore with all of the books attributes' do
 
     bookstore_1 = Bookstore.create(
       name: "Honey's Home", 
@@ -27,8 +27,12 @@ RSpec.describe 'the childs index page' do
       date_published: "2004-02-01 08:30:00",
       last_sold: "2023-11-20 11:25:00" 
       )
+
+      visit "/bookstores/#{bookstore_1.id}/books"
+
+      save_and_open_page
       
-      visit "/books"
+
 
       expect(page).to have_content(book_1.title)
       expect(page).to have_content(book_1.author)
@@ -43,6 +47,8 @@ RSpec.describe 'the childs index page' do
       expect(page).to have_content(book_2.cost)
       expect(page).to have_content(book_2.date_published)
       expect(page).to have_content(book_2.last_sold)
+
   end
 end
+
 
