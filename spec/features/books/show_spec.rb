@@ -2,7 +2,14 @@ require 'rails_helper'
 
 RSpec.describe 'the childs show page for a particular book' do
   it 'displays the name of the book including the books attributes' do
-    book_1 = Book.create(
+    bookstore_1 = Bookstore.create(
+      name: "Honey's Home", 
+      currently_open: true, 
+      revenue: 70.5, 
+      opening: "2018-08-01 10:00:00", 
+      fiscal_end_year: "2023-01-31 20:00:00")
+    
+    book_1 = bookstore_1.books.create(
       title: "Good Omens",
       author: "Terry Pratchett",
       fiction: true,

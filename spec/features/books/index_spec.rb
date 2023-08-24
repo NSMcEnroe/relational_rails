@@ -2,8 +2,15 @@ require 'rails_helper'
 
 RSpec.describe 'the childs index page' do
   it 'displays the name of each book and all of their attributes' do
+
+    bookstore_1 = Bookstore.create(
+      name: "Honey's Home", 
+      currently_open: true, 
+      revenue: 70.5, 
+      opening: "2018-08-01 10:00:00", 
+      fiscal_end_year: "2023-01-31 20:00:00")
     
-    book_1 = Book.create(
+    book_1 = bookstore_1.books.create(
       title: "Good Omens",
       author: "Terry Pratchett",
       fiction: true,
@@ -12,7 +19,7 @@ RSpec.describe 'the childs index page' do
       last_sold: "2023-09-10 13:00:00"
       )
     
-    book_2 = Book.create(
+    book_2 = bookstore_1.books.create(
       title: "A Short History",
       author: "Bill Bryson",
       fiction: false,
@@ -22,6 +29,8 @@ RSpec.describe 'the childs index page' do
       )
       
       visit "/books"
+
+      save_and_open_page
 
       expect(page).to have_content(book_1.title)
       expect(page).to have_content(book_1.author)
