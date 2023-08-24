@@ -10,13 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_19_171142) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_24_011733) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "tasks", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
+  create_table "bookstores", force: :cascade do |t|
+    t.string "name"
+    t.boolean "currently_open"
+    t.float "revenue"
+    t.datetime "opening"
+    t.datetime "fiscal_end_year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
