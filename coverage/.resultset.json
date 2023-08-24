@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/environment.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/application.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/application.rb": {
         "lines": [
           1,
           null,
@@ -51,7 +51,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/boot.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -59,7 +59,7 @@
           1
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/environments/test.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -123,7 +123,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/initializers/assets.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -139,7 +139,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/initializers/content_security_policy.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -150,38 +150,6 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/initializers/filter_parameter_logging.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/initializers/inflections.rb": {
-        "lines": [
           null,
           null,
           null,
@@ -200,7 +168,39 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/initializers/permissions_policy.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -215,7 +215,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/config/routes.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -224,44 +224,44 @@
           null,
           null,
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/app/helpers/application_helper.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/app/models/task.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/models/bookstore.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/models/application_record.rb": {
         "lines": [
           1,
           1,
-          2,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/controllers/bookstores_controller.rb": {
+        "lines": [
           1,
-          null,
           1,
-          null,
+          1,
           null,
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/2mod/task_manager/app/models/application_record.rb": {
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/controllers/application_controller.rb": {
         "lines": [
-          1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1692651319
+    "timestamp": 1692843790
   }
 }
