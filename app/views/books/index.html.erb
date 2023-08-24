@@ -1,12 +1,12 @@
 <h1>Books</h1>
 
 <% @books.each do |book| %>
-  <h2>Title: <%= @book.title %></h2>
-  <h2>Author: <%= @book.author %></h2>
-  <p>Is the genre fiction?: <%= @book.fiction %></p>
-  <p>MSRP: <%= @book.cost %></p>
-  <p>Published: <%= @book.date_published %></p>
-  <p>Last Sold: <%= @book.last_sold %></p>
+  <h2>Title: <%= book.title %></h2>
+  <h2>Author: <%= book.author %></h2>
+  <p>Is the genre fiction?: <%= book.fiction %></p>
+  <p>MSRP: <%= book.cost %></p>
+  <p>Published: <%= book.date_published %></p>
+  <p>Last Sold: <%= book.last_sold %></p>
   <% end %>
 
 

@@ -304,6 +304,21 @@
           null
         ]
       },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/models/bookstore.rb": {
         "lines": [
           1,
@@ -322,14 +337,8 @@
           null,
           null
         ]
-      },
-      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1692888777
+    "timestamp": 1692899738
   }
 }
