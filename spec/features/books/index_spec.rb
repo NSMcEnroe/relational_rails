@@ -36,10 +36,6 @@ RSpec.describe 'the childs index page' do
       expect(page).to have_content(book_2.cost)
       expect(page).to have_content(book_2.date_published)
       expect(page).to have_content(book_2.last_sold)
-
-      
-      
-
   end
 end
 
