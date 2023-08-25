@@ -1,6 +1,6 @@
 class BookstoresController < ApplicationController
   def index
-   @bookstores = Bookstore.all
+   @bookstores = Bookstore.order(:created_at).reverse
   end
 
   def show

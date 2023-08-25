@@ -30,8 +30,6 @@ RSpec.describe 'Parent Children Index' do
 
       visit "/bookstores/#{bookstore_1.id}/books"
 
-      save_and_open_page
-      
 
 
       expect(page).to have_content(book_1.title)
