@@ -48,8 +48,6 @@ RSpec.describe 'the parents show page for a particular bookstore' do
 
     visit "/bookstores/#{bookstore.id}"
 
-    save_and_open_page
-    
     expect(page).to have_content(bookstore.books.count)
   end
 end
