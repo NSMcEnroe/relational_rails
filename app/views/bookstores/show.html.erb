@@ -4,3 +4,5 @@
 <p>Opening Day: <%= @bookstore.opening %></p>
 <p>Fiscal Year End: <%= @bookstore.fiscal_end_year %></p>
 <p>Total Books: <%=@bookstore.books.count %></p>
+
+<a class="bookstore-books-index-link" href="/bookstores/<%= @bookstore.id %>/books">All Books at <%= @bookstore.name %></a>
