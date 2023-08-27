@@ -7,4 +7,9 @@ RSpec.describe 'layouts/application', type: :view do
     expect(rendered).to have_content('I LoVe GrApHiC dEsIgN')
     expect(rendered).to have_link('All Books', href: '/books')
   end
+
+  it 'can display the parent index on every page' do
+    render
+    expect(rendered).to have_link('All Bookstores', href: '/bookstores')
+  end
 end
