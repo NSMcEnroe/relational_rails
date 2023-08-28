@@ -15,6 +15,16 @@ class BookstoresController < ApplicationController
     redirect_to "/bookstores"
   end
 
+  def edit
+    @bookstore = Bookstore.find(params[:id])
+  end
+
+  def update
+    bookstore = Bookstore.find(params[:id])
+    bookstore.update(bookstore_params)
+    redirect_to '/bookstores'
+  end
+
   private
 
   def bookstore_params

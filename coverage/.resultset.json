@@ -230,6 +230,8 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
@@ -330,6 +332,57 @@
           null
         ]
       },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/spec/features/bookstores/edit_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/spec/features/bookstores/index_spec.rb": {
         "lines": [
           1,
@@ -410,11 +463,6 @@
           null,
           1,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -602,7 +650,7 @@
         "lines": [
           1,
           1,
-          4,
+          7,
           null,
           null,
           1,
@@ -618,15 +666,25 @@
           null,
           null,
           1,
+          2,
+          null,
           null,
           1,
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1693228076
+    "timestamp": 1693231423
   }
 }

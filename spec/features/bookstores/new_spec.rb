@@ -20,11 +20,6 @@ RSpec.describe 'creating new bookstores' do
 
     expect(current_path).to eq("/bookstores")
     expect(page).to have_content("Danika's Den")
-    # expect(page).to have_content(true)
-    # expect(page).to have_content(125.75)
-    # expect(page).to have_content("2000-12-13 11:15:00")
-    # expect(page).to have_content("2023-02-01 16:00:00")
-
   end
 
 end

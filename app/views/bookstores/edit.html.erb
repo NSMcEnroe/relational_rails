@@ -1,0 +1,14 @@
+<%= form_with url: "/bookstores/#{@bookstore.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :currently_open %>
+  <%= form.text_field :currently_open %>
+  <%= form.label :revenue %>
+  <%= form.text_field :revenue %>
+  <%= form.label :opening %>
+  <%= form.text_field :opening %>
+  <%= form.label :fiscal_end_year %>
+  <%= form.text_field :fiscal_end_year %>
+
+  <%= form.submit "Update Bookstore" %>
+<% end %>
