@@ -8,3 +8,5 @@
   <p>Published: <%= book.date_published %></p>
   <p>Last Sold: <%= book.last_sold %></p>
   <% end %>
+
+<%= link_to "Create Book", "/bookstores/#{@bookstore.id}/books/new" %>
