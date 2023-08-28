@@ -9,5 +9,16 @@ class BookstoresController < ApplicationController
 
   def new
   end
+
+  def create
+    bookstore = Bookstore.create(bookstore_params)
+    redirect_to "/bookstores"
+  end
+
+  private
+
+  def bookstore_params
+    params.permit(:name, :currently_open, :revenue, :opening, :fiscal_end_year)
+  end
   
 end
