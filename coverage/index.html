@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-29T08:01:23-06:00">2023-08-29T08:01:23-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-29T08:09:32-06:00">2023-08-29T08:09:32-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.98%
+  97.03%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.07
+         1.08
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>298</b> relevant lines,
-    <span class="green"><b>289</b> lines covered</span> and
+    <b>303</b> relevant lines,
+    <span class="green"><b>294</b> lines covered</span> and
     <span class="red"><b>9</b> lines missed. </span>
     (<span class="green">
-  96.98%
+  97.03%
 </span>
 )
   </div>
@@ -110,7 +110,7 @@
             <td class="cell--number">18</td>
             <td class="cell--number">18</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.56</td>
+            <td class="cell--number">1.67</td>
             
           </tr>
         
@@ -315,9 +315,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c08cc9deb0862e83804e5eae82e332d1c7e27b40" class="src_link" title="spec/features/bookstores/edit_spec.rb">spec/features/bookstores/edit_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">47</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">20</td>
+            <td class="cell--number">63</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -1241,8 +1241,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="7">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="4" data-linenumber="7">
+            <span class="hits">4</span>
             
 
             
@@ -1373,8 +1373,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="19">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="3" data-linenumber="19">
+            <span class="hits">3</span>
             
 
             
@@ -7856,8 +7856,8 @@
     
 
     <div class="t-line-summary">
-      <b>20</b> relevant lines.
-      <span class="green"><b>20</b> lines covered</span> and
+      <b>25</b> relevant lines.
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -7908,7 +7908,7 @@
 
             
 
-            <code class="ruby">  it &#39;links to the edit page&#39; do</code>
+            <code class="ruby">  it &#39;links to the edit page from the show page&#39; do</code>
           </li>
         </div>
       
@@ -8007,7 +8007,7 @@
 
             
 
-            <code class="ruby">      visit &#39;/bookstores&#39;</code>
+            <code class="ruby">      visit &quot;/bookstores/#{bookstore.id}&quot;</code>
           </li>
         </div>
       
@@ -8084,7 +8084,7 @@
 
             
 
-            <code class="ruby">  it &#39;can edit the bookstore&#39; do</code>
+            <code class="ruby">  it &#39;links to the edit page from the index page&#39; do</code>
           </li>
         </div>
       
@@ -8106,7 +8106,7 @@
 
             
 
-            <code class="ruby">      name: &quot;anika&#39;s Den&quot;,</code>
+            <code class="ruby">      name: &quot;Danika&#39;s Den&quot;,</code>
           </li>
         </div>
       
@@ -8172,7 +8172,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -8183,7 +8183,7 @@
 
             
 
-            <code class="ruby">    visit &#39;/bookstores&#39;</code>
+            <code class="ruby">      visit &#39;/bookstores&#39;</code>
           </li>
         </div>
       
@@ -8205,7 +8205,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&quot;anika&#39;s Den&quot;)</code>
+            <code class="ruby">      click_button &quot;Update #{bookstore.name}&quot;</code>
           </li>
         </div>
       
@@ -8227,7 +8227,7 @@
 
             
 
-            <code class="ruby">    click_button &quot;Update anika&#39;s Den&quot;</code>
+            <code class="ruby">      expect(current_path).to eq(&quot;/bookstores/#{bookstore.id}/edit&quot;)</code>
           </li>
         </div>
       
@@ -8238,7 +8238,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -8260,7 +8260,7 @@
 
             
 
-            <code class="ruby">    fill_in(&#39;name&#39;, with: &quot;Danika&#39;s Den&quot;)</code>
+            <code class="ruby">  it &#39;can edit the bookstore&#39; do</code>
           </li>
         </div>
       
@@ -8271,51 +8271,51 @@
 
             
 
-            <code class="ruby">    fill_in(&#39;currently_open&#39;, with: &quot;true&quot;)</code>
+            <code class="ruby">    bookstore = Bookstore.create!(</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="38">
+            
             
 
             
 
-            <code class="ruby">    fill_in(&#39;revenue&#39;, with: 125.75)</code>
+            <code class="ruby">      name: &quot;anika&#39;s Den&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="39">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="39">
+            
             
 
             
 
-            <code class="ruby">    fill_in(&#39;opening&#39;, with: &quot;2000-12-13 11:15:00&quot;)</code>
+            <code class="ruby">      currently_open: true,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="40">
+            
             
 
             
 
-            <code class="ruby">    fill_in(&#39;fiscal_end_year&#39;, with: &quot;2023-02-01 16:00:00&quot;)</code>
+            <code class="ruby">      revenue: 20,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="41">
+            
             
 
             
 
-            <code class="ruby">    click_button &#39;Update Bookstore&#39;</code>
+            <code class="ruby">      opening: &quot;2000-12-13 11:15:00&quot;,</code>
           </li>
         </div>
       
@@ -8326,40 +8326,40 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      fiscal_end_year: &quot;2023-02-01 16:00:00&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="43">
+            
             
 
             
 
-            <code class="ruby">    expect(current_path).to eq(&quot;/bookstores&quot;)</code>
+            <code class="ruby">      )</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&quot;Danika&#39;s Den&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="45">
+          <li class="never" data-hits="" data-linenumber="44">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &#39;/bookstores&#39;</code>
           </li>
         </div>
       
@@ -8370,12 +8370,188 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;anika&#39;s Den&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_button &quot;Update anika&#39;s Den&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;name&#39;, with: &quot;Danika&#39;s Den&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;currently_open&#39;, with: &quot;true&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;revenue&#39;, with: 125.75)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;opening&#39;, with: &quot;2000-12-13 11:15:00&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;fiscal_end_year&#39;, with: &quot;2023-02-01 16:00:00&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_button &#39;Update Bookstore&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq(&quot;/bookstores&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;Danika&#39;s Den&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="63">
             
             
 

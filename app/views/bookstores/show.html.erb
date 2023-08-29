@@ -5,4 +5,7 @@
 <p>Fiscal Year End: <%= @bookstore.fiscal_end_year %></p>
 <p>Total Books: <%=@bookstore.books.count %></p>
 
+<p><%= button_to "Update #{@bookstore.name}", "/bookstores/#{@bookstore.id}/edit", method: :get %></p>
+
 <a class="bookstore-books-index-link" href="/bookstores/<%= @bookstore.id %>/books">All Books at <%= @bookstore.name %></a>
+
