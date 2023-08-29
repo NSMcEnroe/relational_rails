@@ -3,6 +3,8 @@ class BookstoreBooksController < ApplicationController
     @bookstore = Bookstore.find(params[:bookstore_id])
     @books = if params[:sorted]
       @bookstore.books.order(:title)
+    elsif params[:sort] == "threshold"
+      @bookstore.books.where("cost > #{params[:threshold_value]}")
     else
       @bookstore.books
     end

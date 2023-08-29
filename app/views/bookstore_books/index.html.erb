@@ -12,3 +12,13 @@
 
 <%= link_to "Create Book", "/bookstores/#{@bookstore.id}/books/new" %>
 <%= link_to 'Sort books by alphabetical order', "/bookstores/#{@bookstore.id}/books?sorted=true" %>
+
+<h4>Limit Responses</h4>
+<%= form_with url: "/bookstores/#{@bookstore.id}/books", method: :get, data: {turbo:false} do |form| %>
+  <%= form.hidden_field :sort, value: "threshold" %>
+  <%= form.label :threshold_value, "Limit" %></br>
+  <%= form.number_field :threshold_value %></br>
+  <br><%= form.submit "Only return records of books that cost more than inputted value" %></br>
+<% end %>
+
+
