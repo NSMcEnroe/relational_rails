@@ -234,12 +234,66 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
       "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/spec/features/books/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -710,6 +764,22 @@
           null,
           null,
           1,
+          4,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
           1,
           null,
           null
@@ -786,6 +856,6 @@
         ]
       }
     },
-    "timestamp": 1693281071
+    "timestamp": 1693283643
   }
 }

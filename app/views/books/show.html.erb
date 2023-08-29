@@ -4,3 +4,5 @@
 <p>MSRP: <%= @book.cost %></p>
 <p>Published: <%= @book.date_published %></p>
 <p>Last Sold: <%= @book.last_sold %></p>
+
+<p><%= button_to "Update Book", "/books/#{@book.id}/edit", method: :get %></p>
