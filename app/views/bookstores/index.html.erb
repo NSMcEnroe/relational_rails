@@ -1,7 +1,9 @@
 <h1>Bookstores</h1>
 
 <% @bookstores.each do |bookstore| %>
-  <p><%= bookstore.name %> <%= button_to "Update #{bookstore.name}", "/bookstores/#{bookstore.id}/edit", method: :get %></p>
+  <p><%= bookstore.name %> 
+  <%= button_to "Update #{bookstore.name}", "/bookstores/#{bookstore.id}/edit", method: :get %>
+  <%= button_to "Delete Bookstore", "/bookstores/#{bookstore.id}", method: :delete %></p>
   <% end %>
 
 <%= link_to "New Bookstore", "/bookstores/new" %>
