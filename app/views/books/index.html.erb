@@ -8,6 +8,7 @@
   <p>Published: <%= book.date_published %></p>
   <p>Last Sold: <%= book.last_sold %></p>
   <p><%= button_to "Update Book", "/books/#{book.id}/edit", method: :get %></p>
+  <p><%= button_to "Delete Book", "/books/#{book.id}", method: :delete %></p>
   <% end %>
 
 
