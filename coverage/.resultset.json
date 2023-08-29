@@ -237,6 +237,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -566,6 +567,32 @@
           null,
           1,
           1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/2mod/projects/relational_rails/spec/features/bookstores/destroy_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null,
           null,
           null
@@ -949,11 +976,11 @@
         "lines": [
           1,
           1,
-          7,
+          8,
           null,
           null,
           1,
-          4,
+          5,
           null,
           null,
           1,
@@ -975,6 +1002,12 @@
           null,
           null,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
           null,
           1,
           2,
@@ -984,6 +1017,6 @@
         ]
       }
     },
-    "timestamp": 1693319063
+    "timestamp": 1693333788
   }
 }

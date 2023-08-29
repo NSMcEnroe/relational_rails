@@ -25,6 +25,12 @@ class BookstoresController < ApplicationController
     redirect_to '/bookstores'
   end
 
+  def destroy
+    bookstore = Bookstore.find(params[:id])
+    bookstore.destroy
+    redirect_to '/bookstores'
+  end
+
   private
 
   def bookstore_params
