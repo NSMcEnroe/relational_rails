@@ -116,8 +116,6 @@ RSpec.describe 'Parent Children Index' do
 
       expect(all_elements[0]).to have_text(book_2.title)
   end
-
-
 end
 
 
