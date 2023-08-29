@@ -3,7 +3,7 @@
 <p>Revenue: <%= @bookstore.revenue %></p>
 <p>Opening Day: <%= @bookstore.opening %></p>
 <p>Fiscal Year End: <%= @bookstore.fiscal_end_year %></p>
-<p>Total Books: <%=@bookstore.books.count %></p>
+<p>Total Books: <%=@bookstore.count_books %></p>
 
 <p><%= button_to "Update #{@bookstore.name}", "/bookstores/#{@bookstore.id}/edit", method: :get %></p>
 <p><%= button_to "Delete Bookstore", "/bookstores/#{@bookstore.id}", method: :delete %>
