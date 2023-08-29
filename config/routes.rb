@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   post '/bookstores', to: 'bookstores#create'
   get '/bookstores/:id/edit', to: 'bookstores#edit'
   patch '/bookstores/:id', to: 'bookstores#update'
-  post '/bookstores/:bookstore_id/books', to 'bookstore_books#create'
+  post '/bookstores/:bookstore_id/books', to: 'bookstore_books#create'
 end

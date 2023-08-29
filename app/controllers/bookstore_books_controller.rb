@@ -10,8 +10,9 @@ class BookstoreBooksController < ApplicationController
   end
 
   def create
-    book = Book.create(book_params)
-    redirect_to "/bookstores"
+    @bookstore = Bookstore.find(params[:bookstore_id])
+    @book = @bookstore.books.create(book_params)
+    redirect_to "/bookstores/#{@bookstore.id}/books"
   end
 
   private
