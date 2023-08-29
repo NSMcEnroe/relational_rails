@@ -19,4 +19,5 @@ Rails.application.routes.draw do
   post '/bookstores/:bookstore_id/books', to: 'bookstore_books#create'
   get '/bookstores/:id/books?sorted=true', to: 'bookstore_books#sort'
   delete '/bookstores/:id', to: 'bookstores#destroy'
+  delete '/books/:id', to: 'books#destroy'
 end
