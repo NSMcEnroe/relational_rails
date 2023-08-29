@@ -10,3 +10,4 @@
   <% end %>
 
 <%= link_to "Create Book", "/bookstores/#{@bookstore.id}/books/new" %>
+<%= link_to 'Sort books by alphabetical order', "/bookstores/#{@bookstore.id}/books?sorted=true" %>

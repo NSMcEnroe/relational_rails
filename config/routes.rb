@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get '/bookstores/:id/edit', to: 'bookstores#edit'
   patch '/bookstores/:id', to: 'bookstores#update'
   post '/bookstores/:bookstore_id/books', to: 'bookstore_books#create'
+  get '/bookstores/:id/books?sorted=true', to: 'bookstore_books#sort'
 end

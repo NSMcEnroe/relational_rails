@@ -1,7 +1,11 @@
 class BookstoreBooksController < ApplicationController
   def index 
     @bookstore = Bookstore.find(params[:bookstore_id])
-    @books = @bookstore.books
+    @books = if params[:sorted]
+      @bookstore.books.order(:title)
+    else
+      @bookstore.books
+    end
   end
 
   def new
@@ -13,6 +17,12 @@ class BookstoreBooksController < ApplicationController
     @bookstore = Bookstore.find(params[:bookstore_id])
     @book = @bookstore.books.create(book_params)
     redirect_to "/bookstores/#{@bookstore.id}/books"
+  end
+
+  def sort
+    bookstore = Bookstore.find(params[:bookstore_id])
+    @books = bookstore.books.order(:title)
+    render 'index'
   end
 
   private
